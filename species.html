@@ -1,0 +1,423 @@
+<html>
+<head>
+  <title>Rice crops</title>
+  
+  </head>
+  
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>VigSatDB</title>
+
+<style type="text/css">
+<!--
+.style2 {color: #FFFFFF}
+.style15 {color: #ECECED}
+-->
+</style>
+</head>
+
+<!-- dd menu -->
+
+<script type="text/javascript">
+
+<!--
+
+var timeout         = 500;
+
+var closetimer		= 0;
+
+var ddmenuitem      = 0;
+
+
+
+// open hidden layer
+
+function mopen(id)
+
+{	
+
+	// cancel close timer
+
+	mcancelclosetime();
+
+
+
+	// close old layer
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+
+
+	// get new layer and show it
+
+	ddmenuitem = document.getElementById(id);
+
+	ddmenuitem.style.visibility = 'visible';
+
+
+
+}
+
+// close showed layer
+
+function mclose()
+
+{
+
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+}
+
+
+
+// go close timer
+
+function mclosetime()
+
+{
+
+	closetimer = window.setTimeout(mclose, timeout);
+
+}
+
+
+
+// cancel close timer
+
+function mcancelclosetime()
+
+{
+
+	if(closetimer)
+
+	{
+
+		window.clearTimeout(closetimer);
+
+		closetimer = null;
+
+	}
+
+}
+
+
+
+// close layer when click-out
+
+document.onclick = mclose; 
+
+// -->
+
+</script>
+<head>
+<style>
+/*margining of the header table*/
+#sddm
+
+{	margin: 0;
+
+	padding: 0;
+
+	z-index: 30}
+
+#sddm li
+
+{	margin: 0;
+
+	padding: 0;
+
+	list-style: none;
+
+	float: left;
+	font-weight: bold;
+
+	font:  18px arial}
+/* styles for the header columns/links box*/
+
+#sddm li a
+
+{	display: block;
+
+	margin: 0 1px 0 0;
+
+	padding: 12px 10px;
+
+	width: 161.8px;
+
+	background: #1E85AE;
+
+	color:#FFFFFF;
+
+	text-align: center;
+
+	text-decoration: none}
+
+/* code for mouse hover*/
+
+#sddm li a:hover
+
+{	background: #0B3241;
+    
+}
+
+
+
+#sddm div
+
+{	position: absolute;
+
+	visibility: hidden;
+
+	margin: 0;
+
+	padding: 0;
+
+	background: #50B9E2;
+
+	border: 0px solid }
+
+/* styles for the dropdown box*/
+
+	#sddm div a
+
+	{	position: relative;
+
+		display: block;
+
+		margin: 0;
+
+		padding: 5px 30px;
+
+		width: auto;
+
+		white-space: nowrap;
+
+		text-align: left;
+
+		text-decoration: none;
+
+		background: #92D3ED;
+		border-color: #4DA64D;
+		color: #0B3241;
+		font: 15px arial}
+
+
+
+	#sddm div a:hover
+
+	{	background:  #0B3241;
+
+		color: #CCCCCC}
+
+.style3 {color: #FF6633}
+.style16 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: xx-large;
+}
+.style17 {font-size: 40px}
+.style19 {
+	font-size: 18px;
+	color: #A0522D;
+}
+.style4 { margin-left:2em;
+    margin-right:2em;
+    font-size: 20px; }
+.style5{font-color: #007300; 
+}
+.style11{ text-align: center;
+         font-size: 25px ;
+		 color:  #483D8B;
+		     text-shadow:2px 2px #74A0EF;
+
+		 }
+.stylebcorner{
+	border-bottom-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+    padding: 20px;   
+}	 
+.styletcorner{
+	border-top-right-radius: 25px;
+   border-top-left-radius: 25px;
+    padding: 0px;  
+}	
+.styletcorner{
+	border-top-right-radius: 25px;
+   border-top-left-radius: 25px;
+    padding: 0px;  
+}	
+.styleborder{
+	border-width:5px;	
+    border-style:solid;
+	border-radius: 10px;
+	border-color:#DEB887
+	
+} 
+
+{
+  background-image: url("rice2.jpg");
+}
+.dropbtn {
+ background-color:  #fbfcfc ;
+ color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color:  #d7bde2 ;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:  #d1f2eb ;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d1f2eb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+	
+	</style>
+</head>
+<body  >
+<table width="1250" height="120"  align="center" border="0" class="styletcorner" cellspacing="0"  bgcolor="#D3EDF8"  >
+<tr>
+<td  bgcolor="#FFFFFF" ><img  src="frontrice.jpg" width="1250" height="160"></td>
+</tr>
+<tr> <td > 
+<div align="center" class="sample" style=" margin-left: 0px; margin-right:0px">
+<ul id="sddm"  >
+<li><a href="home.html" onmouseover="mopen('m6)" onmouseout="mclosetime()"><b>Home</b></a></li>
+<li><a href="species.html" onmouseover="mopen('m4')" onmouseout="mclosetime()"><b>Species</b></a></li>
+
+
+<li><a href="" onmouseover="mopen('m1')" onmouseout="mclosetime()"><b>Microsatellite</b></a>
+<div align="left" id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">  
+<a href="predicted.php" onmouseover="mopen('m1')" onmouseout="mclosetime()">Predicted in silico SSR Primer</a>
+</div>
+</li>
+
+	
+<li><a href="" onmouseover="mopen('m3')" onmouseout="mclosetime()"><b>Polymorphism</b></a>
+<div align="left" id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+<a href="upload_ep.php" onmouseover="mopen('m3')" onmouseout="mclosetime()"> Primer</a>
+</div>
+</li>
+
+
+	
+<li><a href="vignassr_analysis.php" onmouseover="mopen('m4')" onmouseout="mclosetime()"><b>Unique Primers</b></a></li>
+
+	
+</div>
+</td> </tr>
+</table>
+</html>
+
+
+<body style="background-color:powderblue;">
+
+<table width="1280" height="200"  align="center" border="0" cellspacing="0"  bgcolor="powderblue">
+<tr><td align="center" height="40" class="style4" align="center" colspan="2" bgcolor="powderblue"><b>Welcome to  </i> Rice </i>  Simple Sequence Repeats Tool
+</b></td></tr>
+</table>
+
+
+   
+ 
+     
+      <div class="dropdown" style="float:left;">
+  <button class="dropbtn">Rice Species</button><span style="cursor:pointer;color:#3e8e41" onclick="openNav()">&#9776;</span>
+<div class="dropdown-content" style="left:0;">
+  <a href="oryza_barthii.php">Oryza_barthii</a>
+  <a href="#">Oryza_nivara</a>
+  <a href="#">Oryza_brachyanth</a>
+<a href="#">Oryza_glaberrima</a>
+<a href="#">Oryza_glumipatula</a>
+<a href="#">Oryza_meridionalis</a>
+<a href="#">Oryza_punctata</a>
+<a href="#">Oryza_rufipogon</a>
+<a href="#">Oryza_sativa</a>
+<a href="#">Oryza_indica</a>
+<a href="#">Oryza_longistaminata</a>
+
+  </div>
+</div> 
+
+      
+      
+
+
+
+
+   </body>
+</html>
+
+</body>
+</html>
