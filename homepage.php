@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <Title>comparative analysis of heat stress genes in ageliops speltiodes and Triticum aestivum</Title>
