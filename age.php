@@ -1,7 +1,7 @@
 <html>
 <head>
 </head>
-<?php include 'https://grewaljai.github.io/homepage.html';?>
+ <html-include src="https://grewaljai.github.io/homepage.html"></html-include>
 <h1 align="lEFT">Aegilops Speltoides</h1>
 <marquee width = "50%">Aegilops speltoides are diploid grasses, having seven pairs of chromosomes (2n = 14).</marquee>
 <br>
