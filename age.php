@@ -65,7 +65,7 @@
 <br>
 
 <form>
-  <form action="indexhome.php" method="get">
+  <form action="https://grewaljai.github.io/indexch.html" method="get">
  <input type="button" value="Go back!" onClick="history.go(-1);">
 </form>
 
